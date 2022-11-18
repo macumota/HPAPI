@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Pokedex</title>
+    <title>Hogwarts</title>
     <!-- Fonts -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-    >
+    />
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet" />
     <!-- Normalize -->
     <link
       rel="stylesheet"
@@ -19,10 +20,36 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
-    >
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./app/styles/styles.css" />
   </head>
 
   <body id="body">
-    
+    <header>
+      <h1>PotterAPI</h1>
+      <h2>Encuentra a tu personaje</h2>
+    </header>
+    <main>
+      <div class="mainUp">
+        <form class="search">
+          <input
+            type="text"
+            class="input"
+            placeholder="Nombre de tu personaje"
+          />
+          <button>¡Accio personaje!</button>
+        </form>
+        <form class="random">
+          <input
+            class="button"
+            type="button"
+            value="¡Randomizarum! El destino decide por ti"
+          />
+        </form>
+      </div>
+      <div class="all"></div>
+    </main>
+    <footer></footer>
   </body>
 </html>
