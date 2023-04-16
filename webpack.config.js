@@ -49,11 +49,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'css/app.bundle.css',
     }),
-    new CopyPlugin({
-      patterns: [
-        { from: './src/app/assets', to: 'assets' },
-      ],
-    }),
+    
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',

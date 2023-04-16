@@ -6,7 +6,7 @@ import { paintAll } from "./paintAll.js";
 import { getOneCharacter } from "./getOneCharacter.js";
 
 //Crear un fetch que traiga los personaje de la API, entonces, espera la respuesta para convertirlo en un json y entonces, pinta los personajes para la vista general".
-fetch("https://fedeperin-harry-potter-api.herokuapp.com/personajes")
+fetch("https://harry-potter-api.onrender.com/personajes")
   .then((resp) => resp.json())
   .then((characters) => paintAll(characters));
 
@@ -17,7 +17,7 @@ const input$$ = document.querySelector(".input");
 form$$.addEventListener("submit", (event) => {
   event.preventDefault();
   fetch(
-    "https://fedeperin-harry-potter-api.herokuapp.com/personajes?apodo=" +
+    "https://harry-potter-api.onrender.com/personajes?apodo=" +
       input$$.value
   )
     .then((resp) =>
@@ -35,7 +35,7 @@ button$$.addEventListener("click", (event) => {
   event.preventDefault();
   const characterRandomId = Math.floor(Math.random() * 23);
   fetch(
-    "https://fedeperin-harry-potter-api.herokuapp.com/personajes?=id" +
+    "https://harry-potter-api.onrender.com/personajes?=id" +
       characterRandomId
   ).then((resp) =>
     resp
